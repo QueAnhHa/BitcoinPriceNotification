@@ -49,7 +49,7 @@ def main():
 		bitcoin_history.append({'date': date, 'price': price})
 
 		# Send an emergency notification
-		if price < BITCOIN_PRICE THRESHOLD:
+		if price < BITCOIN_PRICE_THRESHOLD:
 			post_ifttt_webhook('bitcoin_price_emergency', price)
 
 		# Send a Telegram notification
